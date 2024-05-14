@@ -35,7 +35,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 20vh;
   /* Can turn off later */
   /* background-color: darkgrey; */
 }
@@ -202,3 +202,47 @@ a:hover {
   border-radius: 25px;
   margin: 50px 150px;
 }
+
+/* SECTION PROJECT */
+
+#projects {
+  position: relative;
+  height: 100vh;
+  padding-top: 25px;
+}
+
+.section__projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project1-container, .project2-container {
+  justify-content: center;
+  border: solid 2px black;
+  border-radius: 25px;
+  margin: 25px;
+  padding: 25px;
+  background-color: rgb(232, 232, 232);
+}
+
+.project-pic1, .project-pic2 {
+  height: 300px;
+  width: 300px;
+  border-radius: 45px;
+  padding: 10px;
+}
+
+.section__text__p3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* SECTION CONTACT ME */
+
+
