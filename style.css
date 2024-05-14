@@ -65,11 +65,26 @@ a {
 a:hover {
   color: gray;
   text-decoration: underline;
-  text-underline-offset: 10px;
+  text-underline-offset: 6px;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 /* SECTION PROFILE */
+
+/* ANIMATION SECTION */
+.animation-image {
+  position: relative;
+  top: 20px;
+  right: 220px;
+  animation: glasses 4s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animation-image-size {
+  height: 100px;
+  position: absolute;
+}
 
 #profile {
   display: flex;
@@ -79,6 +94,7 @@ a:hover {
 
 .section__pic-container {
   display: flex;
+  position: relative;
   height: 300px;
   width: 400px;
   margin: auto 0;
@@ -178,11 +194,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 
-.section_pic-container, .about-details-container {
+.section_pic-container,
+.about-details-container {
   display: flex;
 }
 
@@ -197,7 +214,7 @@ a:hover {
 }
 
 .about-details-container {
-  padding: 50px;
+  padding: 25px;
   border: solid 3px black;
   border-radius: 25px;
   margin: 50px 150px;
@@ -208,6 +225,7 @@ a:hover {
 #projects {
   position: relative;
   height: 100vh;
+  margin-top: 50px;
   padding-top: 25px;
 }
 
@@ -219,7 +237,8 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.project1-container, .project2-container {
+.project1-container,
+.project2-container {
   justify-content: center;
   border: solid 2px black;
   border-radius: 25px;
@@ -228,7 +247,8 @@ a:hover {
   background-color: rgb(232, 232, 232);
 }
 
-.project-pic1, .project-pic2 {
+.project-pic1,
+.project-pic2 {
   height: 300px;
   width: 300px;
   border-radius: 45px;
@@ -245,4 +265,48 @@ a:hover {
 
 /* SECTION CONTACT ME */
 
+#contact {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
 
+.section__upper-contactme-container {
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 25px;
+  background-color: rgb(232, 232, 232);
+  width: 250px;
+}
+
+.contact-info-container,
+.email-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+/* SECTION FOOTER */
+
+footer {
+  height: 20vh;
+}
+
+.nav-links__footer-container {
+  justify-content: center;
+}
+
+.copyright__footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}

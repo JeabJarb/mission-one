@@ -6,6 +6,43 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+    <style>
+      /* .animation-image {
+      position: relative;
+      top: 20px;
+      right: 220px;
+      animation: glasses
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      } */
+
+      @keyframes glasses {
+        0% {
+          top: 20px;
+        }
+        4% {
+          top: 20px;
+        }
+        5% {
+          top: 25px;
+        }
+        /* 8% {top: 25px} */
+        10% {
+          top: 15px;
+        }
+        15% {
+          top: 25px;
+        }
+        /* 18% {top: 10px} */
+        20% {
+          top: 20px;
+        }
+        100% {
+          top: 20px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -22,6 +59,13 @@
     <section id="profile">
       <div class="section__pic-container">
         <img src="./images/profilepic.png" alt="Capy Bara Profile picture" />
+        <div class="animation-image">
+          <img
+            src="./images/memes-glasses.png"
+            alt="glasses"
+            class="animation-image-size"
+          />
+        </div>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -75,35 +119,84 @@
       </div>
     </section>
     <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="section__projects-container">
-            <div class="project1-container">
-                <img src="./images/Project-01.jpg" alt="Picture of Project 1" class="project-pic1">
-                <p class="section__text__p3">Project One</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="location.href='https://github.com/'">Github</button>
-                    <button class="btn btn-color-1" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">Live Demo</button>
-                </div>
-            </div>
-            <div class="project2-container">
-                <img src="./images/Project-02.jpg" alt="Picture of Project 2" class="project-pic2">
-                <p class="section__text__p3">Project Two</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="location.href='https://github.com/'">Github</button>
-                    <button class="btn btn-color-1" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">Live Demo</button>
-                </div>
-            </div>
+      <h1 class="title">Projects</h1>
+      <div class="section__projects-container">
+        <div class="project1-container">
+          <img
+            src="./images/Project-01.jpg"
+            alt="Picture of Project 1"
+            class="project-pic1"
+          />
+          <p class="section__text__p3">Project One</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'"
+            >
+              Live Demo
+            </button>
+          </div>
         </div>
+        <div class="project2-container">
+          <img
+            src="./images/Project-02.jpg"
+            alt="Picture of Project 2"
+            class="project-pic2"
+          />
+          <p class="section__text__p3">Project Two</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        <h1 class="title">Contact Me</h1>
-        <div class="section__contactme-container">
-            <div class="section__forms-container">
-                
-            </div>
+      <h1 class="title contactme__text">Contact Me</h1>
+      <div class="section__upper-contactme-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:exampleemail@gmail.com" class="email-links"
+              >Example@gmail.com</a
+            >
+          </p>
         </div>
-
+      </div>
     </section>
-    <footer></footer>
+    <footer>
+      <nav>
+        <div class="nav-link__footer-contaniner">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="copyright__footer">
+        Copyright &copy; Capy Bara. All Rights Reserved.
+      </p>
+    </footer>
   </body>
 </html>
