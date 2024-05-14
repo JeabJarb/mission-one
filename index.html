@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav>
-        <div class="logo">Capy Bara</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Capy Bara</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <section id="profile">
-        <div class="left">left
-            <!-- <img src="./images/profilepic.png" alt="Capy Bara Profile picture">
-        </div> -->
-        <div class="right">right
-            <!-- <h5>Hello, I'm</h5>
-            <h1>Capy Bara</h1>
-            <h3>Frontend Developer</h3>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-             -->
+      <div class="section__pic-container">
+        <img src="./images/profilepic.png" alt="Capy Bara Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Capy Bara</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./images/capybara-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="social-container">
+          <img
+            src="./images/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./images/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
     </section>
-    <section id="project">
-
-    </section>
-    <section id="contact">
-
-    </section>
+    <section id="project"></section>
+    <section id="contact"></section>
     <footer></footer>
-</body>
+  </body>
 </html>

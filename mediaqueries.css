@@ -1,0 +1,18 @@
+@media screen and (max-width:700px) {
+    nav, .nav-links {
+        flex-direction: column;
+        height: 17vh;
+    }
+
+    .nav-links {
+        gap: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 6.3vh 0 0 0;
+        padding: 0 0 20px 0;
+    }
+
+}
